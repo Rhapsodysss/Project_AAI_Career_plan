@@ -1,4 +1,4 @@
-{ 
+{ "file ini tidak terhubung dengan code, hanya untuk catatan/list kata synonim untuk 'skill' ":
   "semua dibawah ini dapat dimasukkan ke input bagian | Enter skill and level: '...' 'skill_levels(ada list dibawah)' ":
   
   "skill_synonyms": {
@@ -377,3 +377,4 @@
     ]
   }
 }
+
