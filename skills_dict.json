@@ -1,170 +1,170 @@
-{ "file ini tidak terhubung dengan code, hanya untuk catatan/list kata synonim untuk 'skill' ":
-  "semua dibawah ini dapat dimasukkan ke input bagian | Enter skill and level: '...' 'skill_levels(ada list dibawah)' ":
-  
-  "skill_synonyms": {
+{
+    "FILE INI TIDAK TERHUBUNG KE CODE! (jika ada error di sini tidak berpengaruh), hanya untuk catatan/list kata synonim untuk 'skill' ": "semua dibawah ini dapat dimasukkan ke input bagian | Enter skill and level: '...' 'skill_levels(ada list dibawah)' 'skill_synonyms"
+}
+     {
     "programming": [
-      "coding",
-      "code",
-      "software_development",
-      "developing",
-      "web_development",
-      "app_development",
-      "kode",
-      "koding"
+        "coding",
+        "code",
+        "software_development",
+        "developing",
+        "web_development",
+        "app_development",
+        "kode",
+        "koding"
     ],
     "python": [
-      "py",
-      "python_programming",
-      "python_code",
-      "code_python",
-      "kode_python",
-      "koding_python"
+        "py",
+        "python_programming",
+        "python_code",
+        "code_python",
+        "kode_python",
+        "koding_python"
     ],
     "data_analysis": [
-      "data_science",
-      "analytics",
-      "big_data",
-      "data_analytics",
-      "analisis_data",
-      "data_analisis"
+        "data_science",
+        "analytics",
+        "big_data",
+        "data_analytics",
+        "analisis_data",
+        "data_analisis"
     ],
     "machine_learning": [
-      "ml",
-      "ai",
-      "artificial_intelligence",
-      "deep_learning"
+        "ml",
+        "ai",
+        "artificial_intelligence",
+        "deep_learning"
     ],
     "project_management": [
-      "managing",
-      "team_lead",
-      "coordination",
-      "manager",
-      "management",
-      "pemimpin"
+        "managing",
+        "team_lead",
+        "coordination",
+        "manager",
+        "management",
+        "pemimpin"
     ],
     "communication": [
-      "speaking",
-      "presentation",
-      "public_speaking",
-      "writing",
-      "berbicara",
-      "publik_speaking"
+        "speaking",
+        "presentation",
+        "public_speaking",
+        "writing",
+        "berbicara",
+        "publik_speaking"
     ],
     "problem_solving": [
-      "troubleshooting",
-      "debugging",
-      "critical_thinking",
-      "analytical_thinking",
-      "memecahkan_masalah",
-      "pemecahan_masalah"
+        "troubleshooting",
+        "debugging",
+        "critical_thinking",
+        "analytical_thinking",
+        "memecahkan_masalah",
+        "pemecahan_masalah"
     ],
     "cloud_computing": [
-      "cloud",
-      "aws",
-      "azure"
+        "cloud",
+        "aws",
+        "azure"
     ],
     "cybersecurity": [
-      "security",
-      "cyber_security",
-      "netsec"
+        "security",
+        "cyber_security",
+        "netsec"
     ],
     "patient_care": [
-      "nursing",
-      "clinical_skills"
+        "nursing",
+        "clinical_skills"
     ],
     "medical_knowledge": [
-      "medical",
-      "healthcare",
-      "pharmacy"
+        "medical",
+        "healthcare",
+        "pharmacy"
     ],
     "electrical_systems": [
-      "electrical",
-      "wiring",
-      "construction"
+        "electrical",
+        "wiring",
+        "construction"
     ],
     "blueprint_reading": [
-      "technical_drawing"
+        "technical_drawing"
     ],
     "design_software": [
-      "design",
-      "graphic_design",
-      "adobe",
-      "photoshop"
+        "design",
+        "graphic_design",
+        "adobe",
+        "photoshop"
     ],
     "classroom_management": [
-      "teaching",
-      "instruction",
-      "pedagogy",
-      "mengajar",
-      "guru"
+        "teaching",
+        "instruction",
+        "pedagogy",
+        "mengajar",
+        "guru"
     ],
     "financial_analysis": [
-      "finance",
-      "accounting"
+        "finance",
+        "accounting"
     ],
     "excel": [
-      "excel_skills",
-      "spreadsheets"
+        "excel_skills",
+        "spreadsheets"
     ],
     "solar_technology": [
-      "solar",
-      "renewable",
-      "green_energy"
+        "solar",
+        "renewable",
+        "green_energy"
     ],
     "legal_research": [
-      "law"
+        "law"
     ],
     "legal_writing": [
-      "litigation",
-      "advocacy"
+        "litigation",
+        "advocacy"
     ],
     "legal_analysis": [
-      "attorney"
+        "attorney"
     ],
     "legal_procedures": [
-      "court"
+        "court"
     ],
     "law_enforcement": [
-      "policing",
-      "patrol",
-      "enforcement"
+        "policing",
+        "patrol",
+        "enforcement"
     ],
     "criminal_investigation": [
-      "investigation",
-      "detective"
+        "investigation",
+        "detective"
     ],
     "military_operations": [
-      "soldier"
+        "soldier"
     ],
     "military_training": [
-      "combat"
+        "combat"
     ],
     "national_security": [
-      "defense"
+        "defense"
     ],
     "military_strategy": [
-      "tactical"
+        "tactical"
     ],
     "culinary_skills": [
-      "cooking",
-      "baking",
-      "food_preparation"
+        "cooking",
+        "baking",
+        "food_preparation"
     ],
     "culinary_management": [
-      "kitchen"
+        "kitchen"
     ],
     "agricultural_production": [
-      "farming",
-      "harvest"
+        "farming",
+        "harvest"
     ],
     "crop_management": [
-      "crop"
+        "crop"
     ],
     "animal_husbandry": [
-      "livestock"
+        "livestock"
     ]
-  },
-  "skill_levels": {
+},
+"skill_levels": {
     "beginner": 0.3,
     "low": 0.3,
     "basic": 0.3,
@@ -180,8 +180,8 @@
     "excellent": 0.9,
     "master": 1.0,
     "professional": 0.8
-  },
-  "all_standard_skills": [
+},
+"all_standard_skills": [
     "programming",
     "python",
     "data_analysis",
@@ -259,122 +259,121 @@
     "nutrition",
     "cost_control",
     "sanitation_procedures"
-  ],
-  "skill_categories": {
+],
+"skill_categories": {
     "technology": [
-      "programming",
-      "python",
-      "javascript",
-      "java",
-      "sql",
-      "algorithms",
-      "problem_solving",
-      "cloud_computing",
-      "cybersecurity",
-      "machine_learning",
-      "data_analysis",
-      "statistics",
-      "linear_algebra",
-      "data_interpretation",
-      "visualization",
-      "reporting"
+        "programming",
+        "python",
+        "javascript",
+        "java",
+        "sql",
+        "algorithms",
+        "problem_solving",
+        "cloud_computing",
+        "cybersecurity",
+        "machine_learning",
+        "data_analysis",
+        "statistics",
+        "linear_algebra",
+        "data_interpretation",
+        "visualization",
+        "reporting"
     ],
     "business_management": [
-      "project_management",
-      "communication",
-      "leadership",
-      "planning",
-      "organization",
-      "agile",
-      "financial_analysis",
-      "excel"
+        "project_management",
+        "communication",
+        "leadership",
+        "planning",
+        "organization",
+        "agile",
+        "financial_analysis",
+        "excel"
     ],
     "digital_marketing": [
-      "digital_marketing",
-      "seo",
-      "content_creation",
-      "social_media",
-      "analytics"
+        "digital_marketing",
+        "seo",
+        "content_creation",
+        "social_media",
+        "analytics"
     ],
     "healthcare": [
-      "patient_care",
-      "medical_knowledge",
-      "empathy"
+        "patient_care",
+        "medical_knowledge",
+        "empathy"
     ],
     "technical_trades": [
-      "electrical_systems",
-      "safety_protocols",
-      "troubleshooting",
-      "blueprint_reading",
-      "solar_technology",
-      "installation"
+        "electrical_systems",
+        "safety_protocols",
+        "troubleshooting",
+        "blueprint_reading",
+        "solar_technology",
+        "installation"
     ],
     "creative_design": [
-      "design_software",
-      "creativity",
-      "visual_communication",
-      "typography"
+        "design_software",
+        "creativity",
+        "visual_communication",
+        "typography"
     ],
     "education": [
-      "classroom_management",
-      "patience",
-      "subject_knowledge"
+        "classroom_management",
+        "patience",
+        "subject_knowledge"
     ],
     "legal": [
-      "legal_research",
-      "legal_writing",
-      "legal_analysis",
-      "litigation",
-      "contract_law",
-      "legal_procedures",
-      "case_analysis",
-      "trial_advocacy",
-      "evidence_law",
-      "negotiation",
-      "business_law"
+        "legal_research",
+        "legal_writing",
+        "legal_analysis",
+        "litigation",
+        "contract_law",
+        "legal_procedures",
+        "case_analysis",
+        "trial_advocacy",
+        "evidence_law",
+        "negotiation",
+        "business_law"
     ],
     "law_enforcement_military": [
-      "law_enforcement",
-      "criminal_investigation",
-      "military_operations",
-      "military_training",
-      "military_strategy",
-      "national_security",
-      "physical_fitness",
-      "discipline",
-      "forensics",
-      "research_skills"
+        "law_enforcement",
+        "criminal_investigation",
+        "military_operations",
+        "military_training",
+        "military_strategy",
+        "national_security",
+        "physical_fitness",
+        "discipline",
+        "forensics",
+        "research_skills"
     ],
     "culinary_hospitality": [
-      "culinary_skills",
-      "menu_planning",
-      "food_safety",
-      "culinary_management",
-      "knife_skills",
-      "nutrition",
-      "cost_control",
-      "sanitation_procedures"
+        "culinary_skills",
+        "menu_planning",
+        "food_safety",
+        "culinary_management",
+        "knife_skills",
+        "nutrition",
+        "cost_control",
+        "sanitation_procedures"
     ],
     "agriculture": [
-      "agricultural_production",
-      "crop_management",
-      "animal_husbandry"
+        "agricultural_production",
+        "crop_management",
+        "animal_husbandry"
     ]
-  },
-  "example_inputs": {
+},
+"example_inputs": {
     "skill_level_examples": [
-      "python beginner",
-      "programming intermediate",
-      "communication advanced",
-      "data_analysis expert",
-      "project_management professional"
+        "python beginner",
+        "programming intermediate",
+        "communication advanced",
+        "data_analysis expert",
+        "project_management professional"
     ],
     "experience_examples": [
-      "python 2",
-      "communication 3",
-      "project_management 5",
-      "data_analysis 1"
+        "python 2",
+        "communication 3",
+        "project_management 5",
+        "data_analysis 1"
     ]
-  }
 }
-
+}
