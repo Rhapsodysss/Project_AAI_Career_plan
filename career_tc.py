@@ -14,6 +14,147 @@ class CareerPathAdvisor:
         self.skill_level_mapping = self.build_skill_level_mapping()
         self.indonesian_universities = self.load_indonesian_universities()
         self.education_costs_idr = self.load_education_costs_idr()
+        # TAMBAHAN BARU: Database jurusan
+        self.major_recommendations = self.build_major_recommendations()
+
+    def build_major_recommendations(self):
+        """Database rekomendasi jurusan untuk setiap karir"""
+        return {
+            'software_developer': {
+                'recommended_majors': ['Teknik Informatika', 'Ilmu Komputer', 'Sistem Informasi', 'Teknik Komputer'],
+                'related_majors': ['Matematika', 'Teknik Elektro', 'Statistika'],
+                'priority': ['Ilmu Komputer', 'Teknik Informatika']
+            },
+            'data_scientist': {
+                'recommended_majors': ['Ilmu Komputer', 'Statistika', 'Matematika', 'Fisika'],
+                'related_majors': ['Teknik Industri', 'Ekonomi', 'Aktuaria'],
+                'priority': ['Statistika', 'Ilmu Komputer']
+            },
+            'product_manager': {
+                'recommended_majors': ['Manajemen', 'Teknik Industri', 'Sistem Informasi', 'Psikologi'],
+                'related_majors': ['Komunikasi', 'Marketing', 'Ekonomi'],
+                'priority': ['Manajemen', 'Teknik Industri']
+            },
+            'digital_marketer': {
+                'recommended_majors': ['Marketing', 'Komunikasi', 'Manajemen', 'Ilmu Komunikasi'],
+                'related_majors': ['Psikologi', 'Sosiologi', 'Desain Komunikasi Visual'],
+                'priority': ['Marketing', 'Ilmu Komunikasi']
+            },
+            'registered_nurse': {
+                'recommended_majors': ['Ilmu Keperawatan', 'Kedokteran', 'Kesehatan Masyarakat'],
+                'related_majors': ['Psikologi', 'Gizi', 'Farmasi'],
+                'priority': ['Ilmu Keperawatan']
+            },
+            'electrician': {
+                'recommended_majors': ['Teknik Elektro', 'Teknik Listrik', 'Teknik Energi'],
+                'related_majors': ['Teknik Mesin', 'Teknik Fisika'],
+                'priority': ['Teknik Elektro']
+            },
+            'graphic_designer': {
+                'recommended_majors': ['Desain Komunikasi Visual', 'Seni Rupa', 'Desain Grafis'],
+                'related_majors': ['Arsitektur', 'Ilmu Komunikasi'],
+                'priority': ['Desain Komunikasi Visual']
+            },
+            'secondary_teacher': {
+                'recommended_majors': ['Pendidikan Matematika', 'Pendidikan Bahasa Inggris', 'Pendidikan IPA', 'Pendidikan IPS'],
+                'related_majors': ['Psikologi', 'Sosiologi'],
+                'priority': ['Pendidikan Sesuai Bidang']
+            },
+            'financial_analyst': {
+                'recommended_majors': ['Manajemen', 'Akuntansi', 'Ekonomi', 'Matematika'],
+                'related_majors': ['Statistika', 'Teknik Industri'],
+                'priority': ['Manajemen', 'Akuntansi']
+            },
+            'sustainability_specialist': {
+                'recommended_majors': ['Teknik Lingkungan', 'Kehutanan', 'Ilmu Lingkungan', 'Agroteknologi'],
+                'related_majors': ['Biologi', 'Kimia', 'Geografi'],
+                'priority': ['Teknik Lingkungan', 'Ilmu Lingkungan']
+            },
+            'legal_consultant': {
+                'recommended_majors': ['Ilmu Hukum'],
+                'related_majors': ['Hubungan Internasional', 'Administrasi Negara'],
+                'priority': ['Ilmu Hukum']
+            },
+            'chef': {
+                'recommended_majors': ['Tata Boga', 'Teknologi Pangan', 'Pariwisata'],
+                'related_majors': ['Manajemen', 'Kewirausahaan'],
+                'priority': ['Tata Boga']
+            },
+            'police_officer': {
+                'recommended_majors': ['Ilmu Hukum', 'Kriminologi', 'Administrasi Negara'],
+                'related_majors': ['Psikologi', 'Sosiologi'],
+                'priority': ['Ilmu Hukum', 'Kriminologi']
+            },
+            'detective': {
+                'recommended_majors': ['Kriminologi', 'Ilmu Hukum', 'Psikologi'],
+                'related_majors': ['Sosiologi', 'Antropologi'],
+                'priority': ['Kriminologi']
+            },
+            'military_officer': {
+                'recommended_majors': ['Teknik Mesin', 'Teknik Elektro', 'Ilmu Komputer', 'Manajemen'],
+                'related_majors': ['Geografi', 'Hubungan Internasional'],
+                'priority': ['Teknik Mesin', 'Teknik Elektro']
+            },
+            'intelligence_analyst': {
+                'recommended_majors': ['Ilmu Komputer', 'Matematika', 'Hubungan Internasional', 'Psikologi'],
+                'related_majors': ['Statistika', 'Sosiologi'],
+                'priority': ['Ilmu Komputer', 'Hubungan Internasional']
+            },
+            'attorney': {
+                'recommended_majors': ['Ilmu Hukum'],
+                'related_majors': ['Ekonomi', 'Psikologi'],
+                'priority': ['Ilmu Hukum']
+            },
+            'paralegal': {
+                'recommended_majors': ['Ilmu Hukum', 'Administrasi Perkantoran'],
+                'related_majors': ['Komunikasi', 'Manajemen'],
+                'priority': ['Ilmu Hukum']
+            },
+            'farm_manager': {
+                'recommended_majors': ['Agroteknologi', 'Agribisnis', 'Peternakan', 'Kehutanan'],
+                'related_majors': ['Biologi', 'Manajemen'],
+                'priority': ['Agroteknologi', 'Agribisnis']
+            },
+            'agricultural_specialist': {
+                'recommended_majors': ['Agroteknologi', 'Ilmu Tanah', 'Horticulture', 'Proteksi Tanaman'],
+                'related_majors': ['Biologi', 'Kimia'],
+                'priority': ['Agroteknologi']
+            },
+            'livestock_manager': {
+                'recommended_majors': ['Peternakan', 'Veteriner', 'Teknologi Hasil Ternak'],
+                'related_majors': ['Biologi', 'Manajemen'],
+                'priority': ['Peternakan']
+            },
+            'restaurant_manager': {
+                'recommended_majors': ['Manajemen Perhotelan', 'Pariwisata', 'Tata Boga', 'Manajemen'],
+                'related_majors': ['Komunikasi', 'Kewirausahaan'],
+                'priority': ['Manajemen Perhotelan', 'Pariwisata']
+            }
+        }
+
+    def display_major_recommendations(self, career_key):
+        """Menampilkan rekomendasi jurusan untuk karir tertentu"""
+        if career_key not in self.major_recommendations:
+            print("   📚 Rekomendasi jurusan: Informasi belum tersedia")
+            return
+
+        major_info = self.major_recommendations[career_key]
+
+        print("   📚 REKOMENDASI JURUSAN:")
+        print("   🎯 Jurusan Prioritas:")
+        for i, major in enumerate(major_info['priority'], 1):
+            print(f"      {i}. {major}")
+
+        print("   📖 Jurusan Terkait Lainnya:")
+        other_majors = [m for m in major_info['recommended_majors']
+                        if m not in major_info['priority']]
+        for i, major in enumerate(other_majors, 1):
+            print(f"      {i}. {major}")
+
+        if major_info['related_majors']:
+            print("   🔗 Jurusan Pendukung:")
+            for i, major in enumerate(major_info['related_majors'], 1):
+                print(f"      {i}. {major}")
 
     def build_skill_synonyms(self):
         """Build a mapping of synonyms to standard skill names"""
@@ -1139,10 +1280,17 @@ class CareerPathAdvisor:
         return base_cost
 
     def display_university_recommendations(self, recommendation, user_budget):
-        """Display Indonesian university recommendations with cost information"""
-        print(f"\n🎓 REKOMENDASI UNIVERSITAS DI INDONESIA:")
-        print("   Kampus terbaik untuk karir ini:")
+        """Display Indonesian university recommendations with cost information dan jurusan"""
+        career_key = recommendation['career']
+        career_name = career_key.replace('_', ' ').title()
 
+        print(
+            f"\n🎓 REKOMENDASI UNIVERSITAS & JURUSAN UNTUK {career_name.upper()}:")
+
+        # Tampilkan rekomendasi jurusan terlebih dahulu
+        self.display_major_recommendations(career_key)
+
+        print("\n   🏫 UNIVERSITAS TERKAIT:")
         career_details = recommendation['details']
         if 'indonesian_universities' in career_details:
             for i, uni_key in enumerate(career_details['indonesian_universities'], 1):
@@ -1167,8 +1315,29 @@ class CareerPathAdvisor:
                     print(f"      📍 {uni['location']} | 🏆 {uni['ranking']}")
                     print(
                         f"      💰 {cost_formatted}/semester - {cost_indicator}")
+
+                    # Tampilkan kekuatan universitas yang relevan dengan karir
+                    relevant_strengths = []
+                    recommended_majors = self.major_recommendations.get(
+                        career_key, {}).get('recommended_majors', [])
+
+                    # Cari kekuatan universitas yang relevan dengan jurusan yang direkomendasikan
+                    for strength in uni.get('strengths', []):
+                        strength_name = strength.replace('_', ' ').title()
+                        # Cek apakah kekuatan universitas relevan dengan jurusan yang direkomendasikan
+                        for major in recommended_majors:
+                            if any(keyword in strength_name.lower() for keyword in major.lower().split()):
+                                relevant_strengths.append(strength_name)
+                                break
+
+                    if relevant_strengths:
+                        print(
+                            f"      ⭐ Kekuatan: {', '.join(relevant_strengths[:2])}")
+
                     print(f"      🌐 {uni['website']}")
                     print()
+        else:
+            print("   ⚠️ Informasi universitas belum tersedia untuk karir ini")
 
     def generate_learning_roadmap(self, user_data, recommendation):
         career_name = recommendation['career'].replace('_', ' ').title()
@@ -1204,6 +1373,9 @@ class CareerPathAdvisor:
             ',', '.')
         print(f"💰 ESTIMASI BIAYA: {estimated_cost_formatted} - {cost_info}")
 
+        # REKOMENDASI JURUSAN DAN UNIVERSITAS - DIPINDAH KE SINI
+        self.display_university_recommendations(recommendation, user_budget)
+
         if not missing:
             print("\n✅ You have all the core required skills!")
             print("👉 Focus on emerging skills:", ", ".join(
@@ -1230,9 +1402,6 @@ class CareerPathAdvisor:
                         f"          1. Search for '{display_name} beginner course' on Udemy/Coursera")
                     print(
                         f"          2. Build a small project using {display_name}")
-
-        # Indonesian University Recommendations
-        self.display_university_recommendations(recommendation, user_budget)
 
         print("-" * 70)
 
